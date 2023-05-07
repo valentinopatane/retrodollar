@@ -25,7 +25,7 @@ function App() {
     }, []);
     return (
         <>
-            <main className="flex h-max w-full flex-col items-center justify-center bg-stone-900 py-10 lg:h-screen lg:py-0">
+            <main className="flex h-screen w-full flex-col items-center justify-center bg-stone-900 py-10 sm:h-max lg:h-screen lg:py-0">
                 <section className="pipback flex h-max w-4/5 flex-col items-center justify-center rounded-xl sm:p-12 lg:h-3/4 lg:flex-row">
                     <Calculator
                         dblue={values.blue.value_sell}
@@ -34,10 +34,10 @@ function App() {
                         eoficial={values.oficial_euro.value_sell}
                     />
                     <div className="h-full w-full font-mono text-green-600 lg:w-1/2">
-                        <h3 className="text-center text-3xl font-bold underline">
+                        <h3 className="text-center text-2xl font-bold underline lg:text-3xl">
                             Cotizaciones
                         </h3>
-                        <h6 className="mb-5 mt-2 text-center">
+                        <h6 className="mb-5 mt-2 text-center text-sm lg:text-lg">
                             Fecha: {values?.last_update.substring(0, 10)}
                         </h6>
                         <Currency
