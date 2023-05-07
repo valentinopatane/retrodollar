@@ -32,8 +32,8 @@ const Calculator = (props: {
         });
     };
     return (
-        <div className="items-between flex h-80 w-full flex-col justify-between font-mono text-green-600 lg:h-full lg:w-1/2">
-            <div className="flex h-12 w-full items-center justify-evenly">
+        <div className="items-between mt-1 flex h-80 w-full flex-col items-center font-mono text-green-600 sm:mt-0 lg:h-full lg:w-1/2 lg:justify-between">
+            <div className="mb-5 flex h-12 w-full items-center justify-evenly sm:mb-0">
                 <input
                     min={0}
                     className="h-4/5 w-1/2 rounded-xl border border-green-600 bg-transparent p-5 text-xs outline-0 sm:text-sm"
@@ -49,20 +49,20 @@ const Calculator = (props: {
                     Calcular
                 </button>
             </div>
-            <ul className="flex h-full flex-col justify-center text-xl xl:ml-16">
+            <ul className="flex h-max w-11/12 flex-col justify-center text-xl lg:h-full xl:ml-16">
                 {result.r_dblue !== 0 ? (
                     <>
-                        <li className="mb-6 text-lg lg:text-xl">
+                        <li className="mb-6 text-sm lg:text-xl">
                             Dólares blue: {result.r_dblue.toFixed(2)} $
                         </li>
-                        <li className="mb-6 text-lg lg:text-xl">
+                        <li className="mb-6 text-sm lg:text-xl">
                             Dólares oficiales: {result.r_doficial.toFixed(2)} $
                         </li>
 
-                        <li className="mb-6 text-lg lg:text-xl">
+                        <li className="mb-6 text-sm lg:text-xl">
                             Euros blue: {result.r_eblue.toFixed(2)} $
                         </li>
-                        <li className="mb-6 text-lg lg:text-xl">
+                        <li className="mb-6 text-sm lg:text-xl">
                             Euros oficiales: {result.r_eoficial.toFixed(2)} $
                         </li>
                     </>
