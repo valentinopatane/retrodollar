@@ -36,14 +36,14 @@ const Calculator = (props: {
             <div className="flex h-12 w-full items-center justify-evenly">
                 <input
                     min={0}
-                    className="h-4/5 w-1/2 rounded-xl border border-green-600 bg-transparent p-5 outline-0"
+                    className="h-4/5 w-1/2 rounded-xl border border-green-600 bg-transparent p-5 text-xs outline-0 sm:text-sm"
                     type="number"
                     placeholder="Introducir ARS"
                     ref={ref}
                     onChange={handleChange}
                 />
                 <button
-                    className="text- h-2/3 w-1/4 rounded-xl border border-green-600"
+                    className="lg:text-md h-2/3 w-1/4 rounded-xl border border-green-600 text-xs hover:bg-green-600 hover:text-white"
                     onClick={calculate}
                 >
                     Calcular
